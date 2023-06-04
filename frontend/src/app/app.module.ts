@@ -7,7 +7,7 @@ import { ProductsListComponent } from './components/products-list/products-list.
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { HTTP_INTERCEPTORS, HttpClientModule } from "@angular/common/http";
 import { ErrorInterseptorService } from "./core/error-Interceptor";
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 
 @NgModule({
