@@ -1,0 +1,19 @@
+<div class="container mb-4 mt-4">
+  <button *ngIf="!products"
+          type="button"
+          class="btn btn-primary btn-lg mb-4 mt-4"
+          (click)="onLoad()"
+  >
+    Load Products
+  </button>
+
+  <div *ngIf="products; else non_products">
+    <div *ngFor="let element of products">
+      <app-product-card [product]="element"></app-product-card>
+    </div>
+  </div>
+</div>
+
+<ng-template #non_products>
+  <h4>Push "Load Products" button</h4>
+</ng-template>
